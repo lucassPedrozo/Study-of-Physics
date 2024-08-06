@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    background-color: rgb(230, 255, 255);
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: orange;
+    text-align: center; /* Centraliza o texto dentro do h1 */
+    font-size: clamp(1.5rem, 5vw, 3rem); /* Ajusta dinamicamente entre 1.5rem e 3rem */
+    margin-bottom: 0px; /* Espaço entre o h1 e o botão */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura da viewport para centralizar verticalmente */
+}
+
+.centralizado {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centraliza o texto e o botão */
+}
+
+.button {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: darkorange;
+}
+
+.buttonClear {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    color: white;
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.buttonClear:hover {
+    background-color: darkorange;
+}
+
+.ball {
+    position: absolute; /* Permite posicionar o círculo em qualquer lugar da tela */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+}
+
+
+#ball {
+    background: linear-gradient(to left, #6060607f, #c7c7c71d);
+	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.count{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: orange;
+    border: none;
+    padding: 10px 20px;
+}
